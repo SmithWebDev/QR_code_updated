@@ -38,7 +38,7 @@ when 'y'
   puts
   sleep 1
 else
- color = 'black'
+  color = 'black'
   fill = 'white'
 end
 
@@ -79,11 +79,11 @@ puts
 puts 'Thank you for using the QR Code Generator'
 
 #
-# fill == '' ? ('white') : (fill)
-# color == '' ? ('black') : (color)
-# size == 0 ? (puts 300) : (puts size)
+#fill == '' ? ('white') : (fill)
+#color == '' ? ('black') : (color)
+#size == 0 ? (300) : (size)
 
-
+puts "The color of the QR Code information will be #{color == '' ? ('black') : (color)}. The background color will be #{fill == '' ? ('white') : (fill)}. Lastly, the desired size for the QR Code image is #{size == 0 ? (300) : (size)}px"
 
 #qrcode = RQRCode::QRCode.new("#{url}")
 #
